@@ -6,8 +6,8 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  height: 100vh;
-  width: 100vw;
+  height: 100lvh;
+  width: 100lvw
 }
 
 .side_panel {
@@ -66,18 +66,45 @@ body {
 .header>.upper {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-direction: row;
+}
+
+
+.header>.upper>.search {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+.header>.upper>.search>span {
+  position: relative;
+  top: 3px;
+}
+
+.header>.upper>.search>input {
+  width: 90%;
+  border: none;
+  background-color: lightgray;
+  border-radius: 20px;
+  height: 30px;
+}
+
+.circle_pfp {
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 50%;
+  background-color: black;
 }
 
 .header>.upper>.tray {
   display: flex;
   flex-direction: row;
-
-}
-
-.circle_pfp {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: black;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  gap: 10%;
 }
