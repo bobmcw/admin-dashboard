@@ -165,6 +165,35 @@
   grid-template-rows: 1fr 12fr;
 }
 
+.content>p {
+  align-self: flex-end;
+  padding: 10px;
+}
+
 .content>.projects {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  padding: 3%;
+}
+
+
+.content>.projects>.card {
+  background-color: white;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  aspect-ratio: 3/1;
+  min-width: 500px;
+  width: 90%;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.content>.projects>.card>p {
+  height: 100%;
+}
+
+.content>.projects>.card>.icons {
+  place-self: end end;
 }
