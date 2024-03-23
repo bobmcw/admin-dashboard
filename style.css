@@ -96,8 +96,8 @@
 
 .circle_pfp {
   min-width: 50px;
-  min-height: 50px;
   border-radius: 50%;
+  aspect-ratio: 1/1;
   background-color: black;
 }
 
@@ -108,4 +108,48 @@
   justify-content: center;
   width: 20%;
   gap: 10%;
+}
+
+.header>.lower {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+}
+
+.header>.lower>.user_hello {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  height: 100%;
+  align-self: center;
+  align-items: center;
+  padding-left: 1%;
+}
+
+.header>.lower>.buttons {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 30%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header>.lower>.buttons>button {
+  background-color: #057DCD;
+  color: #E8EEF1;
+  border: none;
+  aspect-ratio: 3/1;
+  width: 20%;
+  border-radius: 80px;
+}
+
+.header>.lower>.buttons>button:hover {
+  background-color: #1E3D58;
+  color: #E8EEF1;
+}
+
+.header>.lower>.circle_pfp {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
 }
