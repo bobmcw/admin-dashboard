@@ -253,6 +253,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding: 5%;
   background-color: white;
   height: fit-content;
@@ -260,4 +261,16 @@
   box-shadow: 5px 5px 5px lightgray;
   width: 75%;
 
+}
+
+.trending_panel>.trending_item {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.trending_panel>.trending_item>* {
+  margin: 10px;
 }
