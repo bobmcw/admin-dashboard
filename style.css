@@ -58,6 +58,7 @@
   display: grid;
   grid-template-rows: 1fr 4fr;
   background-color: #E8EEF1;
+  overflow: hidden;
 }
 
 .header {
@@ -172,9 +173,14 @@
 
 .content>.projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  grid-template-rows: repeat(2, 1fr);
+  height: 80%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 700px));
+  grid-template-rows: fit-content(250px);
+  grid-auto-flow: dense;
+  column-gap: 100px;
+  row-gap: 1vh;
   padding: 3%;
+  overflow: scroll;
 }
 
 
@@ -184,14 +190,16 @@
   flex-grow: 1;
   flex-direction: column;
   aspect-ratio: 3/1;
-  min-width: 500px;
-  width: 90%;
+  width: clamp(400px, 100%, 900px);
   padding: 10px;
   border-radius: 8px;
+  box-shadow: inset 5px 0px gold;
 }
 
 .content>.projects>.card>p {
   height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .content>.projects>.card>.icons {
